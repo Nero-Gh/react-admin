@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material/styles";
 
 // color theme token
 
-const token = (mode) => ({
+export const tokens = (mode) => ({
   ...(mode === "dark"
     ? {
         gray: {
@@ -123,8 +123,8 @@ const token = (mode) => ({
 
 // mui theme settings
 
-export const theme = (mode) => {
-  const colors = token(mode);
+export const themeSettings = (mode) => {
+  const colors = tokens(mode);
 
   return {
     palette: {
@@ -208,7 +208,7 @@ export const useMode = () => {
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () =>
-        setMode((prevMode) => (prevMode === "light" ? "dark" : "light")),
+        setMode((prev) => (prev === "light" ? "dark" : "light")),
     }),
     []
   );
