@@ -10,7 +10,7 @@ const Form = () => {
 
   //this triggers when the form is submitted
   const handleFormSubmit = (values) => {
-    // console.log(values);
+    console.log(values);
   };
 
   return (
@@ -48,7 +48,7 @@ const Form = () => {
                 onChange={handleChange}
                 value={values.firstName}
                 name="firstName"
-                error={!!touched.firstName && !!errors.firstName}
+                error={!!touched.firstName && !!errors.firstName} //double bangs to convert to boolean
                 helperText={touched.firstName && errors.firstName}
                 sx={{ gridColumn: "span 2" }}
               />
@@ -133,6 +133,7 @@ const Form = () => {
 const phoneRegExp =
   /^((\+[1-9]{1,4}[ -]?)|(\([0-9]{2,3}\)[ -]?)|([0-9]{2,4})[ -]?)*?[0-9]{3,4}[ -]?[0-9]{3,4}$/;
 
+// this defines the validation logic
 const checkoutSchema = yup.object().shape({
   firstName: yup.string().required("required"),
   lastName: yup.string().required("required"),

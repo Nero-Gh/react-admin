@@ -9,13 +9,13 @@ import Contacts from "./scenes/Contacts";
 // import Invoice from "./scenes/Invoice";
 import Invoices from "./scenes/invoices";
 import Form from "./scenes/Form";
+import Calendar from "./scenes/Calendar";
 
 // import Bar from "./scenes/Bar";
 // import Line from "./scenes/Line";
 // import Pie from "./scenes/Pie";
 // import FAQ from "./scenes/FAQ";
 // import Geography from "./scenes/FAQ";
-// import Calender from "./scenes/Calender";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -35,13 +35,14 @@ function App() {
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
+              <Route path="/calendar" element={<Calendar />} />
               {/*
               <Route path="/faq" element={<FAQ />} />
               <Route path="/line" element={<Line />} />
               <Route path="/bar" element={<Bar />} />
               <Route path="/pie" element={<Pie />} />
               <Route path="/geography" element={<Geography />} />
-              <Route path="/calender" element={<Calender />} /> */}
+               */}
             </Routes>
           </main>
         </div>
