@@ -14,8 +14,8 @@ import FAQ from "./scenes/faq";
 
 import Bar from "./scenes/bar";
 import Pie from "./scenes/Pie";
-// import Line from "./scenes/Line";
-// import Geography from "./scenes/FAQ";
+import Line from "./scenes/Line";
+import Geography from "./scenes/geography";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -39,10 +39,8 @@ function App() {
               <Route path="/faq" element={<FAQ />} />
               <Route path="/bar" element={<Bar />} />
               <Route path="/pie" element={<Pie />} />
-              {/*
               <Route path="/line" element={<Line />} />
               <Route path="/geography" element={<Geography />} />
-               */}
             </Routes>
           </main>
         </div>

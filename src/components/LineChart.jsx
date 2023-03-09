@@ -14,27 +14,27 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
         axis: {
           domain: {
             line: {
-              stroke: colors.grey[100],
+              stroke: colors.gray[100],
             },
           },
           legend: {
             text: {
-              fill: colors.grey[100],
+              fill: colors.gray[100],
             },
           },
           ticks: {
             line: {
-              stroke: colors.grey[100],
+              stroke: colors.gray[100],
               strokeWidth: 1,
             },
             text: {
-              fill: colors.grey[100],
+              fill: colors.gray[100],
             },
           },
         },
         legends: {
           text: {
-            fill: colors.grey[100],
+            fill: colors.gray[100],
           },
         },
         tooltip: {
@@ -43,7 +43,7 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
           },
         },
       }}
-      colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }} // added
+      colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }} // this happens when we are on the dashboard
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
       xScale={{ type: "point" }}
       yScale={{
