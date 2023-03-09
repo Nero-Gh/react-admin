@@ -62,7 +62,7 @@ const GeographyChart = ({ isDashboard = false }) => {
                 itemWidth: 94,
                 itemHeight: 18,
                 itemDirection: "left-to-right",
-                itemTextColor: colors.gray[100],
+                itemTextColor: colors.gray[500],
                 itemOpacity: 0.85,
                 symbolSize: 18,
                 effects: [
